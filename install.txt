@@ -1,0 +1,24 @@
+npm init
+npm install --save-dev jest babel-jest @babel/core @babel/cli @babel/preset-env webpack webpack-cli
+npm install --save @babel/polyfill
+npm install --save-dev typescript @babel/preset-typescript @types/jest eslint-plugin-prettier faker
+npm install --save-dev @types/faker
+npm install --save-dev prettier
+npm install --save-dev eslint eslint-config-prettier babel-eslint eslint-plugin-react
+npm install --save-dev eslint-plugin-react-hooks
+npm install --save-dev husky lint-staged
+npx eslint --init
+npx jest --init
+npx husky-init
+
+Видео о husky lint-staged
+https://www.youtube.com/watch?v=oWty0Nw1ydk
+
+npm i -D webpack-dev-server sass sass-loader html-webpack-plugin
+npm i classnames react react-dom
+npm i -D @testing-library/jest-dom @testing-library/react @testing-library/react-hooks
+npm i -D chromatic @babel/preset-react cross-env
+npm i -D mini-css-extract-plugin clean-webpack-plugin copy-webpack-plugin
+
+npx sb init --builder webpack5
+
