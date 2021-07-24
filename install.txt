@@ -19,6 +19,7 @@ npm i classnames react react-dom
 npm i -D @testing-library/jest-dom @testing-library/react @testing-library/react-hooks
 npm i -D chromatic @babel/preset-react cross-env
 npm i -D mini-css-extract-plugin clean-webpack-plugin copy-webpack-plugin
+npm install -D typescript-plugin-css-modules
 
 npx sb init --builder webpack5
 

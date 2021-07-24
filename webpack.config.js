@@ -45,13 +45,26 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                auto: true,
+                exportGlobals: true,
+                localIdentName: '[local]--[hash:base64:5]',
+              },
+            },
+          },
           // Compiles Sass to CSS
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: isDev,
+            },
+          },
         ],
       },
     ],

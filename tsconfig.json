@@ -4,6 +4,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "lib": [ "es2015", "dom" ],
     "target": "es5",
     "module": "commonjs",
     "downlevelIteration": true,
