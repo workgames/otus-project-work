@@ -10,7 +10,8 @@
     "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix ./",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=8c747b3547dd"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
